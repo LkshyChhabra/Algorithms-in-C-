@@ -11,7 +11,7 @@ int EuchledeanAlgorithm(int ae,int be)
          return EuchledeanAlgorithm(be,ae%be);
     }
 }
-
+//using mod property
 
 int main() {
     int ae=4,be=6,resr;

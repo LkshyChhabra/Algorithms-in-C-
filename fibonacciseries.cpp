@@ -3,6 +3,17 @@
 
 #include <iostream>
 using namespace std;
+//fiboo temp
+    int path(int n,vector<int> &dp){
+        
+        if(n<=1)return n;
+        if(dp[n]!=-1)return dp[n];
+        return dp[n]=path(n-1,dp)+path(n-2,dp);
+    }
+    int fib(int n) {
+        vector<int> dp(n+1,-1);
+        return path(n,dp);
+    }
 
 int main() {
     int n, t1 = 0, t2 = 1, nextTerm = 0;

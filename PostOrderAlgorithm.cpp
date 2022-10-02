@@ -13,7 +13,15 @@ struct Node {
 		lefter = righter = NULL;
 	}
 };
-
+// basic idea
+  if(root!=NULL){
+      
+        
+        postorderTraversal(root->left);
+        postorderTraversal(root->right);
+        ans.push_back(root->val);
+        }
+        return ans;
 /* Given a binary tree, print its nodes according to the
 "bottom-up" postorder traversal. */
 void printPostorder(struct Node* node1)

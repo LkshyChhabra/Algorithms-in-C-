@@ -4,7 +4,7 @@ using namespace std;
 
 
 stack<char> strt;
-
+//
 string ns;
 
 char insert_at_bottom(char x)

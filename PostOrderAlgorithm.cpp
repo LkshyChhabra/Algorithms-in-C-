@@ -1,7 +1,5 @@
 #include<bits/stdc++.h>
-//
 #include <iostream>
-//
 using namespace std;
 
 /* A binary tree node has data, pointer to left child
@@ -14,8 +12,7 @@ struct Node {
 		this->datax = datax;
 		lefter = righter = NULL;
 	}
-};
-// basic idea
+
   if(root!=NULL){
       
         
@@ -24,8 +21,7 @@ struct Node {
         ans.push_back(root->val);
         }
         return ans;
-/* Given a binary tree, print its nodes according to the
-"bottom-up" postorder traversal. */
+
 void printPostorder(struct Node* node1)
 {
 	if (node1 == NULL)
@@ -41,7 +37,7 @@ void printPostorder(struct Node* node1)
 	cout << node1->datax << " ";
 }
 
-/* Given a binary tree, print its nodes in inorder*/
+//
 void printInorder(struct Node* node1)
 {
 	if (node1 == NULL)

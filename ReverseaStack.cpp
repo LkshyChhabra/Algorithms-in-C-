@@ -1,12 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
-//
-
-
 stack<char> strt;
 //
 string ns;
-
+//
 char insert_at_bottom(char x)
 {
 
@@ -62,12 +59,8 @@ int main()
 		char p=strt.top();
 		strt.pop();
 		ns+=p;
-	}
-	
-	//display of reversed stack
-	cout<<ns[3]<<" "<<ns[2]<<" "
+	}	cout<<ns[3]<<" "<<ns[2]<<" "
 		<<ns[1]<<" "<<ns[0]<<endl;
-	//for simplicity
 	for(int i=0;i<s.size()/2;i++){
             swap(s[i],s[s.size()-i-1]);
         } 

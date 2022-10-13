@@ -1,13 +1,10 @@
-//enter the number 'n', till which Fibonacci series will be printed out in the terminal...
-//this code returns/prints Fibonacci series upto the n'th(inputted by user) term in the series...
-
-#include <iostream>
+#include <iostream.h>
+#include<bits/stdc++.h>
 //
 using namespace std;
-//
-//fiboo temp
+
     int path(int n,vector<int> &dp){
-        
+//        
         if(n<=1)return n;
         if(dp[n]!=-1)return dp[n];
         return dp[n]=path(n-1,dp)+path(n-2,dp);
